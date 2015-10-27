@@ -2,7 +2,7 @@
 
 /**  Basic Page CSS **/
 body{
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2em;
   position: relative;
@@ -10,25 +10,26 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   margin: 0;
 }
 
 /**  Header Navigation **/
 
-header .navbar {
-  padding: 30px 0;
-  transition: all .5s ease-out;
+
+.navbar-brand {
+  padding: 10px;
 }
 
 header .navbar-default {
-  background-color: transparent;
+  background-color: rgba(11, 67, 105, 0.52);
   border: none;
+  padding-top: 8px;
 }
 
 header .navbar-default .navbar-nav a {
   color: white;
-  padding: 5px 8px;
+  padding: 5px 12px;
 }
 
 header .navbar-default .navbar-nav a:hover {
@@ -44,22 +45,26 @@ header .navbar-default .navbar-nav .active a {
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-  color: #E15D5F;
+  color: #EEC856;
   background: transparent;
   text-shadow: none;
 }
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: white;
+  background: transparent;
+  text-shadow: none;
+}
 /**  Navbar Brand **/
 
 header .navbar-brand {
   height: auto;
 }
 
- 
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #279182;
+  background-color: rgb(11, 67, 105);
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -68,37 +73,16 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 @media only screen
 and (max-width: 768px) {
-  header .navbar-collapse.in {
-    background-color: rgba(0,0,0, .5);
-  }
-}
 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgb(11, 67, 105);
+}
 /**  nav inbody **/
 
-header .inbody {
-  background: rgba(104,73,49,.9);
-}
-
-header .navbar.inbody {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-header .navbar.inbody .navbar-nav {
-  padding-top: 10px;
-}
-
-header .inbody .navbar-brand {
-  background-size: 43px;
-  background-position: top left;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-header .inbody .navbar-brand h1 {
-  font-size: 1.1em;
-  padding-left: 38px;
-}
+ .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: white;
+ }
 
 header .inbody .navbar-brand span.subhead {
   display: none;
@@ -160,9 +144,7 @@ header .inbody .navbar-brand span.subhead {
 
 /**  Page -- Mission **/
 #mission {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
-  border-top: 20px solid rgba(238, 200, 86, .5);
+  background-color: #358fcd;
 }
 
 /**  Page -- Services **/
@@ -194,8 +176,7 @@ and (max-width: 768px) {
 /**  Page -- Staff **/
 
 #staff {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+  background-color: #358fcd;
 }
 
 .doctor {
@@ -203,9 +184,9 @@ and (max-width: 768px) {
 }
 
 .doctor h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2em;
-  color: #6F4E36;
+  color: white;
   padding-bottom: 5px;
 }
 
@@ -217,100 +198,12 @@ and (max-width: 768px) {
   width: 100%;
 }
 
-/**  Page -- Testimonials **/
 
-#testimonials {
-  padding: 0;
-}
-
-#testimonials h2 {
-  display: none;
-}
-
-#testimonials blockquote {
-  margin: 0;
-  padding: 0;
-  border-left: none;
-  min-height: 500px;
-  position: relative;
-}
-
-#testimonials blockquote .quote {
-  background-color: rgba(255,255,255,.6);
-  padding: 20px 5%;
-  position: absolute;
-  bottom: 0;
-  width: 75%;
-  font-weight: 400;
-  border-radius: 0 50px 0 0;
-}
-
-#testimonials blockquote .quote:hover {
-  background-color: rgba(239,240,196,.9);
-}
-
-#testimonials #janeh {
-  background: url(../images/testimonial-janeh.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#testimonials #johnb {
-  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#testimonials #mcphersons {
-  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#testimonials #lorraines {
-  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#testimonials .quote {
-  font-size: 1.2em;
-  line-height: 110%;
-  font-weight: 400;
-}
-
-
-#testimonials .quote .more, #testimonials .customer {
-  opacity: 0;
-  font-size: 0;
-  line-height: 0;
-  padding-top: 10px;
-}
-
-
-#testimonials .quote:hover .more {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  display: block;
-  opacity: 1;
-  font-size: .8em;
-  line-height: 120%;
-}
-
-#testimonials .quote:hover .customer {
-  display: block;
-  font-size: .7em;
-  text-align: right;
-}
-
-#testimonials .quote .intro::after {
-  content: '...';
-}
-
-#testimonials .quote:hover .intro::after {
-  content: '';
-}
 
 /**  Footer **/
 
 footer {
-  background: #586D74;
+  background-color: rgb(11, 67, 105);
   color: white;
   font-size: .8em;
   padding: 20px 0 40px 0;
